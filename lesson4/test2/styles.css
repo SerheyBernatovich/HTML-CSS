@@ -1,0 +1,9 @@
+.row{
+    display: inline-block;
+}
+.line{
+    display: block;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+}
