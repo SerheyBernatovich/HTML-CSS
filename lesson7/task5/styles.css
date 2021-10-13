@@ -34,7 +34,7 @@ input[type='text']{
 .second{
     border: 5px white;
 }
-div>em{
+div em{
     color: white;
     font-size: 20px;
 }
