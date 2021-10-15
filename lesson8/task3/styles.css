@@ -1,0 +1,29 @@
+.one{
+    border-radius: 16px;
+    width: 100px;
+    height: 50px;
+    background-color: forestgreen;
+    margin: 50px;
+}
+.two{
+  border-radius: 50%;
+    width: 100px;
+    height: 50px;
+    background-color: darkmagenta;
+    margin: 50px;
+}
+.three{
+  border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    margin: 50px;
+}
+.four{
+    width: 100px;
+    height: 50px;
+    margin: 50px;
+    border: 50px solid transparent;
+    border-top-color: brown;
+    box-sizing: border-box;
+}
