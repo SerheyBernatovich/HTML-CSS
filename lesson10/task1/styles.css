@@ -1,13 +1,12 @@
 .horizontal  {
-    background-color: aqua;
-    height: 50px;
+       height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     
   }
   .vertical  {
-    background-color: coral;
+    
     height: 200px;
     flex-direction: column;
     display: flex;
