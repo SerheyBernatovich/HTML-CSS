@@ -1,0 +1,9 @@
+  .not{
+      display: none;
+  }
+  .hid{
+      visibility: hidden;
+  }
+  .vis{
+      visibility: visible;
+  }
