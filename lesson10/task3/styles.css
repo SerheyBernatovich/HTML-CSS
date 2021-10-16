@@ -1,68 +1,74 @@
 *{
     box-sizing: border-box;
 }
-body{
-    min-height: 100vh;
+body {
     display: flex;
     flex-direction: column;
-}
-header{
+    min-height: 100vh;
+  }
+  
+  header {
     height: 40px;
     background-color: yellow;
     display: flex;
     align-items: center;
-
-}
-footer{
-    height: 40px;
-    background-color: green;
-    display: flex;
-
-}
-span{
-    margin: auto;
-}
-.navigation{
+  }
+  
+  .navigation {
     margin: 0;
     padding: 0;
     display: flex;
     list-style-type: none;
-}
-.navigation1{
+  }
+  
+  .navigation li {
     margin-left: 16px;
-
-}
-main{
+  }
+  
+  main {
     display: flex;
     flex-grow: 1;
-}
-aside{
+  }
+  
+  section {
+    display: flex;
+    flex-grow: 1;
+    background-color: pink;
+  }
+  
+  section h2 {
+    margin: auto;
+  }
+  
+  aside {
+    display: flex;
     background-color: grey;
     width: 200px;
-    display: flex;
-   flex-direction: column;
-}
-aside h2{
+    flex-direction: column;
+  }
+  
+  aside h2 {
     text-align: center;
     margin: 16px;
-
-}
-aside  ul{
+  }
+  
+  aside ul {
     margin: 0;
     padding: 0;
-    
-}
-aside ul li{
+  }
+  
+  aside ul li {
     list-style-type: none;
-    margin-left: 16px;
+    margin: 16px;
     height: 40px;
-}
-
-section{
-    background-color: pink;
+  }
+  
+  footer {
     display: flex;
-    flex-grow: 1;
-}
-section h2{
-  margin: auto;
-}
+    height: 40px;
+    background-color: green;
+  }
+  
+  span {
+    margin: auto;
+  }
