@@ -8,7 +8,7 @@ section{
 h1{
    word-spacing: 20px; 
    text-align: center;
-   text-transform: capitalize;
+   text-transform: uppercase;
 }
 p{
    line-height: 28px; 
