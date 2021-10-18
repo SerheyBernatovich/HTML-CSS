@@ -10,5 +10,5 @@
     background-repeat: no-repeat;
    margin: 16px;
    border: 1px dotted grey;
-   
+   box-sizing: border-box;
 }
