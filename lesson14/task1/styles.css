@@ -1,4 +1,4 @@
-html{
+body{
     font-size: 18px;
 }
 .properties-list__item{
@@ -8,5 +8,5 @@ html{
     list-style-type: none;
     color: #f39;
     font-size: 24px;
-    height: 32px;
+    line-height: 32px;
 }
