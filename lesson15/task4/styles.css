@@ -3,13 +3,13 @@
 }
 .image-container{
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     position: relative;
 }
 .image{
     display: block;
     margin: auto;
-    /* line-height: 100vh; */
+    line-height: 100vh;
     max-width: 100%;
 }
 .image-button{
@@ -26,7 +26,7 @@
     left: calc(50% - 100px);
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     
 }
 .image-button:hover{
