@@ -9,7 +9,6 @@
 .image{
     display: block;
     margin: auto;
-    line-height: 100vh;
     max-width: 100%;
 }
 .image-button{
@@ -25,8 +24,8 @@
     top: calc(50% - 25px);
     left: calc(50% - 100px);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    line-height: 50px;
     
 }
 .image-button:hover{
