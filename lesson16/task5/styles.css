@@ -1,0 +1,9 @@
+form{
+    margin: 32px;
+}
+div{
+    margin: 8px;
+}
+*{
+    box-sizing: border-box;
+}
