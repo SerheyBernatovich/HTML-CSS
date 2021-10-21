@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+.custom{
+   margin: 64px;
+   width: 200px;
+   height: 50px;
+   text-align: center;
+   background-color: coral; 
+   color: white;
+   border-radius: 4px;
+   text-transform: uppercase;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: 700;
+   cursor: pointer;
+   border: none; 
+   line-height: 50px;          
+}
+.custom:hover{
+    color: darkcyan;
+}
+.bird{
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    fill: white;
+}
+.custom:hover>.bird{
+    fill: green;
+}
