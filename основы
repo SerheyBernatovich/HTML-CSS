@@ -1,0 +1,1137 @@
+// const id = 1001;
+// let name = 'IPhone';
+// let isAvalible = true;
+// let price = 500;
+// const color = '';
+// let storeAdress = null;
+
+// let income = 1000;
+// let rent = 400;
+// let otherExpenses = 500;
+// let balance = income - rent - otherExpenses;
+// console.log(balance);
+
+// let freeLanceIncome = 200;
+// income = income + freeLanceIncome
+// console.log(income);
+
+// otherExpenses = otherExpenses*2;
+// console.log(otherExpenses);
+
+// income = income / 2;
+// console.log(income);
+
+
+
+
+
+// const income = 1000;
+// const rent = 400;
+// let otherExpenses = 500;
+
+// let balance = income - rent - otherExpenses;
+
+// console.log(balance);
+
+// // ---------------
+
+// let freelanceIncome = 200;
+
+// freelanceIncome = freelanceIncome * 2;
+// console.log(freelanceIncome);
+
+// balance = balance + freelanceIncome;
+// console.log(balance);
+
+// balance = balance / 2;
+// console.log(balance);
+
+
+
+
+// const userName = 'Andrey';
+// const currentDay = 'Monday';
+
+// const welcomeMessage = 'Hello, ' + userName + '! It is ' + currentDay;
+// console.log(welcomeMessage);
+
+
+
+
+// // my balance
+// const balance = 15600;
+
+// // describe some product
+// const id = 1001;
+// let productName = 'IPhone 12 Pro Max';
+// let isAvailable = true;
+// let price = 20000;
+// const color = 'Silver';
+// let storeAddress = null;
+
+// /
+//  * Может ли пользователь купить конкретный товар? Выведи результат проверки в консоль
+//  */
+
+// console.log(balance>=price);
+
+/
+ * Есть ли товар в наличии? Выведи результат проверки в консоль
+ */
+
+// console.log(isAvailable);
+
+// /
+//  * Является ли цвет выбранного товара Silver. Выведи результат проверки в консоль
+//  */
+
+// console.log(color == 'Silver');
+
+
+
+
+//my balance
+// const balance = 15600;
+
+// describe some product
+// const id = 1001;
+// let productName = 'IPhone 12 Pro Max';
+// let isAvailable = true;
+// let price = 20000;
+// const color = 'Silver';
+// let storeAddress = null;
+
+/
+ * Если пользователь может купить товар - выведи в консоль сообщение - 'You have enough money to buy *product name*'
+ * В другом случае выведи в консоль - 'You do not have enough money to buy *product name*'
+ */
+
+// if(balance>=price){
+//     console.log('You have enough money to buy ' +  productName);
+// }else{
+//     console.log('You do not have enough money to buy ' + productName);
+// }
+
+/
+ * Если товара есть в наличии выведи в консоль сообщение - 'Product *product name* is available now'
+ */
+
+// if(isAvailable){
+//     console.log('Product ' + productName + ' is available now');
+// }
+
+
+//my balance
+// const balance = 21600;
+
+// describe some product
+// const id = 1001;
+// let productName = 'IPhone 12 Pro Max';
+// let isAvailable = true;
+// let price = 20000;
+// const color = 'Silver';
+// let storeAddress = 'Kyiv, Melnichenka st';
+
+/
+ * Может ли пользователь купить конкретный товар и есть ли товар в наличии? Выведи результат проверки в консоль
+ */
+
+// console.log(balance>=price && isAvailable);
+
+/
+ * Есть ли в наличии конкретный товар с указанным адресом мазазина?
+ * В случае такой возможности выведи в консоль - 'You can buy this product in the store'
+ */
+// if(isAvailable && storeAddress){
+// console.log('You can buy this product in the store');
+// }
+
+
+/
+ * Может ли пользователь купить конкретный товар и Silver ли он цвета?
+ * В случае такой возможности выведи в консоль - 'You have enough money to buy product in silver color'
+ */
+
+// if(balance>=price && color=='Silver'){
+//     console.log('You have enough money to buy product in silver color');
+// }
+
+Машуня:), [23.10.21 21:14]
+/
+ * Может ли пользователь купить конкретный товар и чтобы у меня осталось 1000+ денег
+ * В случае такой возможности выведи в консоль - 'You have enough money to buy this product'
+ */
+
+// if(balance>=price && balance > price+1000){
+// console.log('You have enough money to buy this product');
+// }
+
+
+
+// let studentsCount = 0;
+// studentsCount += 10;
+// console.log(studentsCount);
+
+// studentsCount -= 4;
+// console.log(studentsCount);
+
+// studentsCount *= 2;
+// console.log(studentsCount);
+
+// studentsCount /= 5;
+// console.log(studentsCount);
+
+
+
+// const income = 1000;
+
+// const rent = 400;
+// let otherExpenses = 500;
+
+// let balance = income - rent - otherExpenses;
+
+// console.log(balance);
+
+// // ---------------
+
+// let freelanceIncome = 200;
+// freelanceIncome *= 2;
+// console.log(freelanceIncome);
+
+// balance += freelanceIncome;
+// console.log(balance);
+
+// balance /= 2;
+// console.log(balance);
+
+
+
+// const income = 1000;
+
+// const rent = 400;
+// let otherExpenses = 500;
+
+// let balance = income - rent - otherExpenses;
+
+// console.log(balance);
+
+// ---------------
+
+// let freelanceIncome = 200;
+// freelanceIncome *= 2;
+// console.log(freelanceIncome);
+
+// balance += freelanceIncome;
+// console.log(balance);
+
+// balance /= 2;
+// console.log(balance);
+
+
+//function sayWelcome() {
+// console.log('Hello, user! Have a good day!');
+//}
+//sayWelcome();
+
+//function sayWelcome(userName, currentDay) {
+// console.log('Hello, ' + userName + '! Have a good ' + currentDay + '!');
+//}
+//sayWelcome('Serg', 'Monday');
+//sayWelcome('SMan', 'Sunday');
+//sayWelcome('Sergio', 'Friday');
+
+// function getWelcomeMessage(userName, carrentDay) {
+//   const masage = 'Hello, ' + userName + '! Have a good ' + carrentDay + '!';
+//   return masage;
+// }
+// const resalt = getWelcomeMessage('Alex', 'Friday');
+// console.log(resalt);
+// console.log(getWelcomeMessage('Man', 'Sunday'));
+
+// const userName = 'Serg';
+// const carrentDay = 'Monday';
+// console.log(getWelcomeMessage(userName, carrentDay));
+
+// function canBuyProduct(price, balance) {
+//  if ( balance >= price + 500) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// examples
+// canBuyProduct(800, 1300); // ===> true
+// canBuyProduct(150, 600); // ===> false
+// canBuyProduct(1000, 1290); // ===> false
+
+// function countArea(chickens, caws, pigs) {
+//   let area=(chickens*=0.2)+(caws*1.5)+(pigs*0.5);
+//   // chickens*=0.2;
+//   // caws*=1.5;
+//   // pigs*=0.5;
+// return area;
+// }
+
+// // examples
+// console.log(countArea(10, 10, 10)); // ===> 22
+// console.log(countArea(10, 0, 1)); // ===> 2.5
+// console.log(countArea(6, 3, 5)); // ===> 8.2
+
+// function getMax(first, second, third) {
+//   let max;
+//   if (first>second && first>third){
+//     max = first;
+//   }else if (second>third){
+//     max = second;
+//   }else {
+//     max = third;
+//   }
+//   return max;
+// }
+
+// // examples
+// console.log(getMax(10, 20, 30)); // ===> 30
+// console.log(getMax(100, 20, 30)); // ===> 100
+// console.log(getMax(0, 0, 0)); // ===> 0
+
+
+// const countAreaArrow = (chickens, caws, pigs)=> area=(chickens*=0.2)+(caws*1.5)+(pigs*0.5);
+  
+
+// // examples
+// console.log(countAreaArrow(10, 10, 10)); // ===> 22
+// console.log(countAreaArrow(10, 0, 1)); // ===> 2.5
+// console.log(countAreaArrow(6, 3, 5)); // ===> 8.2
+
+
+// function convertMills(minutes, seconds, mills) {
+//   let rezalt = (minutes*60000) + (seconds*1000) + mills;
+//   return rezalt;
+// }
+// // examples
+// console.log(convertMills(1, 2, 100)); // ===> 62100
+// console.log(convertMills(0, 2, 100)); // ===> 2100
+// console.log(convertMills(5, 11, 230)); // ===> 311230
+
+// function printNumbers(num) {
+//   for (let index = 0; index <= num; index += 1){
+//     console.log (index);
+//   }
+// }
+// printNumbers(5);
+
+// function sumOfMillions() {
+//  let sum = 0
+//  for(let num=0; num<=10000000; num+=1){
+//    sum+=num;
+//  }
+//  return sum;
+// }
+// console.log(sumOfMillions());
+// examples
+// sumOfMillions function should calculate and return sum from 0 + 1 + 2 + ... + 10000000
+
+
+// function factorial(num) {
+//   let fact=1;
+  
+//   for(le
+
+Машуня:), [23.10.21 21:14]
+t n=1; n<=num; n++){
+//     fact *= n;
+//   }
+//   return fact;
+// }
+
+// // examples
+// console.log(factorial(3)); // ===> 6
+// console.log(factorial(5)); // ===> 120
+// console.log(factorial(0)); // ===> 1
+
+
+
+// function printNumbers(num) {
+//   let index = 0;
+//   while (index <= num){
+//     console.log (index);
+//     index += 1;
+//   }
+// }
+// printNumbers(3);
+
+// function sum(from, to) {
+//  let sum = 0;
+//  for (let num=from; num<= to; num+=1){
+//    sum+=num;
+//  }
+//  return sum;
+// }
+
+// /
+//  * @param {number} firstFrom
+//  * @param {number} firstTo
+//  * @param {number} secondFrom
+//  * @param {number} secondTo
+//  * @return {boolean}
+//  */
+// function compareSums(firstFrom, firstTo, secondFrom, secondTo) {
+//   // hint: you should use sum function inside compareSums
+//   const firstSum = sum(firstFrom,firstTo);
+//   const secondSum = sum (secondFrom,secondTo);
+//   if (firstSum>secondSum){
+//     return true;
+//   }else {
+//     return false
+//   }
+// }
+
+// // examples
+// console.log(sum(5, 10)); // ===> 45
+// console.log(sum(11, 11)); // ===> 11
+
+// console.log(compareSums(5, 10, 5, 10)); // ===> false
+// console.log(compareSums(5, 15, 3, 5)); // ===> true
+// console.log(compareSums(-2, 5, 5, 9)); // ===> false
+
+
+// function sendEmail() {
+//   console.log('Gromcode party invitation was sent!');
+// }
+
+// function sendEmailList() {
+//   // hint: you should use sendEmail function inside sendEmailList
+
+//  for (let z=1; z<=30; z++ ){
+//    sendEmail();
+//  }
+// }
+// sendEmailList();
+
+
+// function sum(from, to) {
+//   let sum = 0;
+
+//   for (let num = from; num <= to; num += 1) {
+//     sum += num;
+//   }
+
+//   return sum;
+// }
+
+// function compareSums(firsrFrom, firstTo, secondFrom, secondTo) {
+// return sum(firsrFrom,firstTo)>sum(secondFrom,secondTo);
+// }
+
+
+//   const students = ['Andrey', 'Denis', 'Alex', 'Nastya', 'Ninja', 'Skywoker', 'Joda', 'Leo'];
+
+// console.log(students[2]);
+
+// console.log(students[5]);
+
+// console.log(students[0]);
+
+// console.log(students[students.length-1]);
+
+// console.log(students.length);
+
+// // function printArray(arr){
+// //   for(let el of arr){
+// //     console.log(el);
+// //   }
+// // }
+// // printArray(students);
+
+// function printArray(arr){
+//   for(let index=0; index<arr.length; index+=1){
+//     const el = arr[index];
+//     console.log(el);
+//   }
+// }
+//  printArray(students);
+
+
+// function printArray(arr){
+//   for(let index=0; index<arr.length; index+=1){
+//     const el = arr[index];
+//     console.log(el);
+//   }
+// }
+
+
+// /
+//  * @param {array} arr
+//  */
+// function printArrayForOf(arr) {
+//   for(let el of arr){
+//     console.log(el);
+//   }
+// }
+
+
+// /* ==================================== */
+// /* ===> мутирующие методы массивов <=== */
+// /* ===> изменяют исходный массив <===== */
+// /* ==================================== */
+
+// /* push - добавит элемент в конец массива */
+
+// /
+//  * С помощью метода push добавь число 111 в конец массива arr
+//  * Выведи в консоль результат работы метода push, а так же массив arr после выполнения push
+//  */
+
+// const arr = [1, 2, 3, 4, 5];
+
+// const xxx=arr.push(111);
+// console.log(xxx);
+// console.log(arr);
+
+
+// /* pop - удалит из массива последний элемент и вернет его */
+
+// /
+//  * С помощью метода pop удали последний элемент массива students
+//  * Выведи в консоль результат работы метода pop, а так же массив students после выполнения pop
+//  * */
+
+// const students = ['Alex', 'Ann', 'Jaz', 'Viktor'];
+
+// const zzz=students.pop();
+// console.log(zzz);
+// console.log(students);
+
+
+// /* shift - удалит из массива первый элемент и вернет его */
+
+// /
+//  * С помощью метода shift удали первый элемент массива points
+//  * Выведи в консоль результат работы метода shift, а так же массив points после выполнения shift
+//  * */
+
+// const points = [11, 24, 37, 40, 7];
+
+// const aaa=points.shift();
+// console.log(aaa);
+// console.log(points);
+
+// /* unshift - добавит элемент в начало массива */
+
+Машуня:), [23.10.21 21:14]
+// /
+//  * С помощью метода unshift добавь число 22 в начало массива ages
+//  * Выведи в консоль результат работы метода unshift, а так же массив ages после выполнения unshift
+//  * */
+
+// const ages = [18, 25, 31, 29, 50, 11, 1000000];
+
+// const qqq=ages.unshift(22);
+// console.log(qqq);
+// console.log(ages);
+
+// /* ======================================= */
+// /* ===> НЕ мутирующие методы массивов <=== */
+// /* ===> НЕ изменяют исходный массив <===== */
+// /* ======================================= */
+
+// /* includes - проверяет есть ли элемент в массиве */
+
+// /
+//  * С помощью метода includes проверь есть ли числа 0 и 100 в массиве numbers. Результат проверок выведи в консоль
+//  */
+// const numbers = [5, 0, 8, 10, -4, 50, 220];
+
+// numbers.includes(0);
+// numbers.includes(100);
+// console.log(numbers.includes(0));
+// console.log(numbers.includes(100));
+
+
+// function addPoints(points, homeTeam, awayTeam, result) {
+//   let copyPoint=points.slice()
+//   if (result==='win'){
+//     copyPoint[homeTeam-1]+=3;
+//  } else if (result==='lose'){
+//    copyPoint[awayTeam-1]+=3;
+//  }else{
+//   copyPoint[homeTeam-1]+=1;
+//   copyPoint[awayTeam-1]+=1;
+//  }
+//  return copyPoint;
+// }
+// const points=[];
+// // examples
+// console.log(addPoints([8, 6, 4, 1], 1, 2, 'win')); // returns ==> [11, 6, 4, 1]
+// console.log(addPoints([18, 15, 8, 2, 1, 0], 1, 4, 'lose')); // returns ==> [18, 15, 8, 5, 1, 0]
+// console.log(addPoints([18, 15, 8, 2, 1, 0], 5, 6, 'draw')); // returns ==> [18, 15, 8, 2, 2, 1]
+
+
+
+// const userNames =['serg', 'olga', 'brus'];
+
+// function sendEmail(userName) {
+//   console.log('Gromcode party invitation was sent to ' + userName + '!');
+// }
+
+// /
+//  * @param {string[]} userNames
+//  * @return {undefined}
+//  */
+// function sendEmailList(userNames) {
+//   // hint: you should use sendEmail function inside sendEmailList function
+  
+//     for(let name of userNames){
+//        sendEmail(name);
+//   }
+//   }
+//   sendEmailList(userNames);
+
+
+
+// function getRevenue(sales) {
+//   let sum=0;
+//   for (let sall of sales){
+//     sum+=sall;
+
+//   }
+//   return sum;
+// }
+
+// /
+//  * @param {number[]} sales
+//  * @param {number} plannedRevenue
+//  * @return {boolean}
+//  */
+// function checkRevenue(sales, plannedRevenue) {
+//    sales=getRevenue(sales);
+//    if (sales>=plannedRevenue){
+//      return true;
+//    }else{
+//      return false;
+//    }
+//   // hint: you should use getRevenue function inside checkRevenue function, to calculate revenue based on sales array
+//   // put your code here
+// }
+// // examples
+// console.log(getRevenue([25, 40, 10, 58])); // returns ==> 133
+// console.log(checkRevenue([25, 40, 10, 58], 100)); // returns ==> true
+
+
+
+
+// function reverseArray(arr) {
+  
+//        let arr2=arr.slice();
+//      const arr1=arr2.reverse();
+//      return arr1;
+//    }
+      
+// // examples
+// console.log(reverseArray([11, 4, 8, 3])); // ==> [3, 8, 4, 11]
+// console.log(reverseArray([])); // ==> []
+// console.log(reverseArray([100, 50])); // ==> [50, 100]
+
+
+// const getSubArray = (arr, numberOfElements) => {
+//   let arrNew=arr.slice(0, numberOfElements);
+//   return arrNew; 
+// };
+
+// // examples
+// console.log(getSubArray([11, 4, 8, 3], 2)); // ==> [11, 4]
+// console.log(getSubArray([1, 2, 3, 4, 5], 3)); // ==> [1, 2, 3]
+// console.log(getSubArray(['some string', 'hello', 'I am happy'], 1)); 
+// // ==> ['some string']
+
+
+
+// function cloneArr(arr) {
+//   let arrNew=arr.slice();
+//   return arrNew;
+// }
+
+// // examples
+// console.log(cloneArr([11, 4, 8, 3])); // returns ==> [11, 4, 8, 3]
+// console.log(cloneArr([])); // returns ==> []
+// console.log(cloneArr([0])); // returns ==> [0]
+
+// const getMessage = (userName, email, tasksCount) => { 
+//    return   Hello again, ${userName}. Your email is ${email}. You have ${tasksCount} tasks for today
+// };
+
+
+//  console.log(getMessage( "serg", "@", 111));
+
+
+
+// function capitalize(str) {
+//  return str[0].toLocaleUpperCase()+str.slice(1);
+  
+// }
+
+Машуня:), [23.10.21 21:14]
+// // examples
+// console.log(capitalize('cake')); // ==> Cake
+// console.log(capitalize('Monday')); // ==> Monday
+// console.log(capitalize('hello, it is me')); // ==> Hello, it is me
+
+
+ 
+// function getAbbreviation(str) {
+//    const newStr=str.split(' ');
+    // let letter= ('');
+//   for(let el=0; el<newStr.length; el+=1){
+//   if(newStr[el].length>=3){
+//      letter+=newStr[el][0].toUpperCase();
+//       }
+//   }
+   
+//   return letter;
+// }
+
+// // examples
+// console.log(getAbbreviation('some company name')); // ===> SCN
+// console.log(getAbbreviation('Union of Soviet Socialist Republics')); // ===> USSR
+// console.log(getAbbreviation('United States')); // ===> US
+
+
+
+// function camelCase(str) {
+//   const newStr = str.split("");
+//     let result ="";
+    
+//   for(let i=0; i<newStr.length; i+=1){
+//     if(newStr[i]===" "){
+//       newStr[i]="";
+//       newStr[i+1]=newStr[i+1].toUpperCase();
+
+//     }
+//     result+=newStr[i];
+// }
+
+// return result; 
+// }
+
+
+// // examples
+//  console.log(camelCase('some function name')); // ===> someFunctionName
+//  console.log(camelCase('get message')); // ===> getMessage
+// console.log(camelCase('render tasks list')); // ===> renderTasksList
+
+
+
+
+// function isLetter(c) {
+//   return c.toLowerCase() !== c.toUpperCase();
+// }
+
+
+// function isValidWord(str) {
+//   let qqq= null;
+//   const strArr= str.split('');
+
+//   for( let index=0; index<strArr.length; index+=1){
+//     if(isLetter(strArr[index])=== false){  
+//     qqq= false;
+//     break;
+//     }else{
+//       qqq=true;
+//     }
+// }
+// if (qqq && str.length>1){
+//   return true;
+// }else{
+//   return false;
+// }
+// }
+
+// // examples
+// isLetter('h'); // ==> true
+// isLetter('W'); // ==> true
+// isLetter('@'); // ==> false
+// isLetter('1'); // ==> false
+
+// console.log(isValidWord('hello')); // ==> true
+// console.log(isValidWord('Hello')); // ==> true
+// console.log(isValidWord('Test@')); // ==> false
+// console.log(isValidWord('someName1')); // ==> false
+// console.log(isValidWord('It is me')); // ==> false
+
+
+// const product={
+//   id:111,
+//   name: "Serg",
+//   isAvailable:true,
+//   price:2000,
+//   color:"red",
+//   storeAdress:null,
+// }
+// console.log(product);
+
+// const productName=product.name;
+// console.log(productName);
+
+// const storeAddress=product.storeAdress;
+// console.log(storeAddress);
+
+// product.deliveryOptions=["Новая почта", "Укр почта", "Самовывоз"];
+// console.log(product);
+
+
+
+// function getKeys(obj) {
+//   return Object.keys(obj);
+// }
+
+
+// function getValues(obj) {
+//  return Object.values(obj);
+//  }
+
+
+
+
+// function getGoalsStat(players) {
+//    let arr = [];
+
+//   for (let key in players){
+//     let obj = {};
+//     obj.name=players[key].name;
+//     obj.goals=players[key].goals;
+//     obj.team=players[key].team;
+//    arr.push(obj);
+//      }
+//   return arr;
+// }
+// // examples
+// const players = [
+//   {
+//     name: 'Jason Mount',
+//     birthdate: '19.12.1993',
+//     country: 'Deutschland',
+//     number: '21',
+//     team: 'Manchester United',
+//     position: 'MF',
+//     goals: 4,
+//   },
+//   {
+//     name: 'Jason Mount',
+//     birthdate: '01.01.2001',
+//     country: 'Deutschland',
+//     number: '16',
+//     team: 'Manchester United',
+//     position: 'MF',
+//     goals: 0,
+//   },
+//   {
+//     name: 'Finne Bard',
+//     birthdate: '13.02.1995',
+//     country: 'Norwegen',
+//     number: '26',
+//     position: 'FW',
+//     team: 'Fulham United',
+//     goals: 1,
+//   },
+//   {
+//     name: 'Gerhardt Yannick',
+//     birthdate: '13.03.1994',
+//     country: 'Deutschland',
+//     number: 31,
+//     position: 'MF',
+//     team: 'Liverpool',
+//     goals: 8,
+//   },
+// ];
+
+// console.log(getGoalsStat(players));
+// // ===>
+// // [
+// //   { name: 'Jason Mount', team: 'Manchester United', goals: 4 },
+// //   { name: 'Jason Mount, team: 'Manchester United', goals: 0 },
+// //   { name: 'Finne Bard', team: 'Fulham United', goals: 1 },
+// //   { name: 'Gerhardt Yannick', team: 'Liverpool', goals: 8 },
+// // ];
+
+Машуня:), [23.10.21 21:14]
+// function copyObj(obj) {
+//   const res={};
+// for (const key in obj){
+//   res[key]=obj[key];
+// }
+// return res;
+// }
+
+
+// function usersCountByCity(users) {
+//    let obj={};
+//   for(const i in users){
+//     if(users[i].city in obj){
+//       obj[users[i].city]+=1;
+//     }else{
+//       obj[users[i].city]=1;
+//     }
+//     
+//   }
+//    return obj;
+// }
+
+// // examples
+// const users = [
+//   {
+//     id: 888,
+//     name: 'Denis',
+//     age: 44,
+//     city: 'Kyiv',
+//   },
+//   {
+//     id: 333,
+//     name: 'Alex',
+//     age: 33,
+//     city: 'Lviv',
+//   },
+//   {
+//     id: 392,
+//     name: 'Nastya',
+//     age: 22,
+//     city: 'Kyiv',
+//   },
+//   {
+//     id: 123,
+//     name: 'Violetta',
+//     age: 15,
+//     city: 'Odesa',
+//   },
+//   {
+//     id: 640,
+//     name: 'Mykola',
+//     age: 31,
+//     city: 'Lviv',
+//   },
+// ];
+
+// console.log(usersCountByCity(users)); // ===> { 'Kyiv': 2, 'Lviv': 2, 'Odesa': 1 }
+
+
+// function findUsersByName(users, name) {
+//   let arr=[];
+//   for(let el of users){
+//      if(el.name===name){
+//        arr.push(el);           
+//     }
+//   }
+//  return arr;
+// }
+
+ 
+// function findUsersByString(users, str) {
+//   let arrNew=[];
+//   for (let el of users){
+//     if(el.name.includes(str)){
+//       
+//      arrNew.push(el);
+//   }
+// }
+// return arrNew;
+// }
+
+// // examples
+// const users = [
+//   {
+//     id: 101,
+//     name: 'Denis',
+//     city: 'Kyiv',
+//   },
+//   {
+//     id: 102,
+//     name: 'Alexandr',
+//     city: 'Lviv',
+//   },
+//   {
+//     id: 103,
+//     name: 'Nastya',
+//     city: 'Kyiv',
+//   },
+//   {
+//     id: 104,
+//     name: 'Violetta',
+//     city: 'Odesa',
+//   },
+//   {
+//     id: 105,
+//     name: 'Mykola',
+//     city: 'Lviv',
+//   },
+//   {
+//     id: 106,
+//     name: 'Denis',
+//     city: 'Lviv',
+//   },
+//   {
+//     id: 107,
+//     name: 'Andrey',
+//     city: 'Odesa',
+//   },
+//   {
+//     id: 108,
+//     name: 'Alexey',
+//     city: 'Dnipro',
+//   },
+// ];
+
+// console.log(findUsersByName(users, 'Denis')); // ===> [ { id: 101, name: 'Denis', city: 'Kyiv' }, { id: 106, name: 'Denis', city: 'Lviv' } ]
+// console.log(findUsersByName(users, 'Andrey')); // ===> [ { id: 107, name: 'Andrey', city: 'Odesa' } ]
+// console.log(findUsersByName(users, 'Anna')); // ===> [ ]
+
+// console.log(findUsersByString(users, 'Al')); // ===> [ { id: 102, name: 'Alexandr', city: 'Lviv' }, { id: 108, name: 'Alexey', city: 'Dnipro' } ]
+// console.log(findUsersByString(users, 't')); // ===> [ { id: 103, name: 'Nastya', city: 'Kyiv' }, { id: 104, name: 'Violetta', city: 'Odesa' } ]
+// console.log(findUsersByString(users, 'Vik')); // ===> [ ]
+
+// console.log(findUsersByString(users, 'm')); // ===> [ ]
+// // explanation: letter 'm' is not included in any user name, 'Mykola' includes 'M' not 'm', so it is not added to the result
+
+
+
+
+
+// function getMax(arr) {
+//   let max=arr[0];
+//  for (let num=0; num<arr.length; num++) {
+//    if (arr[num]>max){ 
+//      max=arr[num];
+//    }
+//   }
+//    return max;
+//   }     
+      
+
+// // examples
+// console.log(getMax([22, 4, 18, -1, 111, 100, 48])); // ===> 111
+// console.log(getMax([1, 1, 1, 1])); // ===> 1
+// console.log(getMax([0])); // ===> 0
+
+
+// function getBigTransactions(transactions, amount) {
+//   let arr=[];
+//   for(let num of transactions){
+//     if (num>amount){
+//       arr.push(num);
+//    }
+//  }
+//   return arr;
+// }
+  
+
+// // examples
+// console.log(getBigTransactions([110, 58, 2500, 9000, 462, 256], 100)); // ===> [110, 2500, 9000, 462, 256]
+// console.log(getBigTransactions([110, 58, 2500, 9000, 462, 256], 1000)); // ===> [2500, 9000]
+// console.log(getBigTransactions([110, 58, 2500, 9000, 462, 256], 9500)); // ===> []
+
+
+// function getUniques(arr) {
+// let newArr=[];
+//   for(let el of arr){
+//     if (!newArr.includes(el)){
+//     newArr.push(el);
+//   }
+//   
+//   }
+//  return newArr;
+// }
+
+// // examples
+// console.log(getUniques([1, 2, 1, 5, 18, 5, 2, 1, 9])); // ===> [1, 2, 5, 9, 18]
+// console.log(getUniques([2, 2, 2, 2, 2, 5])); // ===> [2, 5]
+// console.log(getUniques([1])); // ===> [1]
+
+Машуня:), [23.10.21 21:14]
+// function getTotalBalance(transactions) {
+//  let rezalt = 0;
+//  for(let el of transactions){
+//    rezalt+=el.amount;
+//  }
+// return rezalt;
+// }
+
+// // examples
+// const dayTransactions = [
+//   { id: 1001, amount: 60 },
+//   { id: 1002, amount: -160 },
+//   { id: 1003, amount: 2000 },
+//   { id: 1004, amount: -500 },
+//   { id: 1005, amount: 136 },
+// ];
+
+// console.log(getTotalBalance(dayTransactions)); // ===> 1536
+// // explanation: 60 - 160 + 2000 - 500 + 136 = 1536
+
+
+// function getSucessfulDay(clientsArr, mimClients){
+//   let day=0;
+//   for (let people of clientsArr){
+//     if(people>mimClients){
+//       day+=1;
+//     }
+//   }
+// return day;
+// }
+
+// console.log(getSucessfulDay([25,40,10,58],30));  
+// // // 2
+// console.log(getSucessfulDay([25,40,10,58],100));
+
+
+
+// function get(arr) {
+// let newArr=[];
+//   for(let el of arr){
+//     if (!newArr.includes(el)){
+//     newArr.push(el);
+//   }
+  
+//   }
+//  return newArr;
+// }
+
+
+// function get(arr) {
+// let sumaEl=0;
+
+//   for(let el of arr){
+
+    
+//     if (el%2===0){
+     
+//      sumaEl+=1;
+//     }   
+ 
+//   }
+//   return sumaEl;
+// }
+
+
+// // return suma;
+// console.log(get([25,25,10,10,13,13]));
+// // 25,10,13
+
+
+// function get(arr) {
+// let newArr=[];
+//   for(let el of arr){
+
+    
+//     if(!newArr.includes(el)){
+     
+//      newArr.push(el);
+//     }   
+ 
+//   }
+//   return newArr.length
+//   ;
+// }
+
+
+
+// console.log(get([25,25,10,10,13,13]));
+// // // 25,10,13
