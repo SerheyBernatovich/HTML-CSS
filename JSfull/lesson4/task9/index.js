@@ -5,5 +5,5 @@ for (let n = 1; n <= 1000; n += 1) {
 const div = sum / 1234;
 const mods = sum % 1234;
 
-const rezult = div > mods ? true : false;
+const rezult = true ? div > mods : mods > div;
 console.log(rezult);
