@@ -16,7 +16,7 @@ html {
   background-color: #e5e5e5;
   padding: 0.5em;
   text-align: center;
-  flex-shrink: 0;
+  flex: 0 0 auto;
 }
 body {
   display: flex;
@@ -58,18 +58,17 @@ body {
   padding: 0;
 }
 .nav-list-item {
-  display: flex;
   background-color: #808080;
   color: white;
   height: 2em;
   margin-bottom: 0.5em;
   align-items: center;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .nav-list-link {
   padding: 0.5em;
   text-decoration: none;
   color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
