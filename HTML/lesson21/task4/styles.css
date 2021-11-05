@@ -5,7 +5,7 @@ html {
   font-family: Verdana;
   color: #555;
   font-size: 16px;
-  min-height: 100%;
+  height: 100%;
 }
 .header {
   color: white;
@@ -16,7 +16,7 @@ html {
   background-color: #e5e5e5;
   padding: 0.5em;
   text-align: center;
-  flex: 0 0 auto;
+  flex-shrink: 0;
 }
 body {
   display: flex;
