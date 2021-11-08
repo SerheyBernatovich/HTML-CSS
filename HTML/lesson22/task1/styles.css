@@ -12,11 +12,11 @@
   width: 100px;
   height: 100px;
   margin: 8px;
-  background-color: #8a2be2;
+  background-color: #ff7f50;
 }
 @media screen and (min-width: 600px) {
   .square {
-    background-color: #ff7f50;
+    background-color: #8a2be2;
   }
 }
 @media screen and (orientation: portrait) {
