@@ -13,8 +13,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+    <link rel="stylesheet" href="style.css" />
+ 
   <body>
     <div class="page">
       <div class="top-section">
@@ -35,20 +35,287 @@
               >Library<i class="navigationt__arrow"></i
             ></a>
           </nav>
-          <button class="header__buttom">Get Started</button>
+          <button class="action-buttom header__button">Get Started</button>
+          <button class="header__menu-button">
+            <span class="header__menu-icon"></span>
+          </button>
         </header>
-        <section></section>
+
+        <!-- Headline -->
+
+        <section class="headline">
+          <div class="headline__content">
+            <h1 class="headline__title">Build stunning websites & apps.</h1>
+            <p class="headline__description">
+              Create live segments and target the right people for messages
+              based on their behaviors.
+            </p>
+            <div class="headline__actions">
+              <button class="action-buttom headline__actions-btn">
+                Get Started
+              </button>
+              <button class="headline__learn-more-btn headline__actions-btn">
+                Learn More
+              </button>
+            </div>
+          </div>
+          <img
+            class="headline__banner"
+            src="img/ouch.png"
+            alt="Headline bunner"
+          />
+        </section>
       </div>
+      <!-- About -->
+
+      <section class="about">
+        <article class="article">
+          <h4 class="articl__title">What is it about?</h4>
+          <p class="article__text">
+            Building a website for a startup that looks amazing is not a rocket
+            science anymore.
+          </p>
+        </article>
+        <article class="article">
+          <h4 class="articl__title">Who is it for?</h4>
+          <p class="article__text">
+            Startups, small companies and teams, entrepreneurs and web
+            developers.
+          </p>
+        </article>
+      </section>
+
+      <!-- Customers -->
+
+      <section class="customers">
+        <div class="customers__row">
+          <div class="costomers__item">
+            <img
+              class="costomers__logo"
+              src="img/logo-nyt.png"
+              alt="New York Time Logo"
+            />
+          </div>
+          <div class="costomers__item">
+            <img
+              class="costomers__logo"
+              src="img/logo-forbest.png"
+              alt="Forbest Logo"
+            />
+          </div>
+          <div class="costomers__item">
+            <img
+              class="costomers__logo"
+              src="img/logo-apple.png"
+              alt="Apple Logo"
+            />
+          </div>
+        </div>
+        <div class="customers__row">
+          <div class="costomers__item">
+            <img
+              class="costomers__logo"
+              src="img/logo-machable.png"
+              alt="Mashable Logo"
+            />
+          </div>
+          <div class="costomers__item">
+            <img
+              class="costomers__logo"
+              src="img/logo-wsj.png"
+              alt="WSJ Logo"
+            />
+          </div>
+          <div class="costomers__item">
+            <img
+              class="costomers__logo"
+              src="img/logo-google.png"
+              alt="Google Logo"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Mobile -->
+
+      <section class="tips">
+        <div class="tip">
+          <span class="tip__subtitle">Acquire Customers</span>
+          <h3 class="tip__title">Easily find leads and customers</h3>
+          <p class="tip__description">
+            Send one-off and automated email, push, and in-app messages to
+            people. Create better stories.
+          </p>
+          <figure class="tip__decoration">
+            <img
+              class="tip__image"
+              src="img/tip-asquire-customer.png"
+              alt="Asquire Customer"
+            />
+            <figcaption class="tip__image-caption">
+              A better way to acquire new users
+            </figcaption>
+          </figure>
+        </div>
+        <div class="tip">
+          <span class="tip__subtitle">Engage Users</span>
+          <h3 class="tip__title">Engage with your audience</h3>
+          <p class="tip__description">
+            Send one-off and automated email, push, and in-app messages to
+            people. Create better stories.
+          </p>
+          <figure class="tip__decoration">
+            <img class="tip__image" src="img/tip-engage.png" alt="Engage" />
+            <figcaption class="tip__image-caption">
+              Knowledge base and smart self-service
+            </figcaption>
+          </figure>
+        </div>
+        <div class="tip">
+          <span class="tip__subtitle">Support</span>
+          <h3 class="tip__title">The best customer experiences</h3>
+          <p class="tip__description">
+            A beautifully simple system for tracking, prioritizing, and solving
+            customer support tickets.
+          </p>
+          <figure class="tip__decoration">
+            <img class="tip__image" src="img/tip-support.png" alt="Support" />
+            <figcaption class="tip__image-caption">
+              Live chat and messaging
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- Features Desktop-->
+      <section class="features">
+        <img
+          class="features__left-decoration"
+          src="img/hidden-ouch.png"
+          alt="Hidden"
+        />
+        <div class="features__content">
+          <div class="features__colum">
+            <h4 class="feature__subtitle">Features</h4>
+            <h2 class="feature__title">Easily find leads and customers</h2>
+            <p class="feature__description">
+              Send one-off and automated email, push, and in-app messages to
+              people. Create better stories.
+            </p>
+            <div class="features__advantage-header">
+              <img src="img/Icon-compas.png" alt="Compas" />
+              <h5 class="features__advantage-title">Acquire new customers</h5>
+            </div>
+            <p class="features__advantage-description">
+              Everything you need to start building – including open-source
+              code, documentation.
+            </p>
+            <div class="features__advantage-item">
+              <img src="img/Icon-building.png" alt="Building" />
+              <span class="features__advantage-item-text">Engage users</span>
+            </div>
+            <div class="features__advantage-item">
+              <img src="img/Icon-bucket.png" alt="Bucket" />
+              <span class="features__advantage-item-text"
+                >Develop across platforms</span
+              >
+            </div>
+          </div>
+        </div>
+        <img
+          class="features__bunner"
+          src="img/invision-screen.png"
+          alt="Invision Screen"
+        />
+      </section>
+
+      <!-- footer -->
+
       <footer class="footer">
-        <div class="useful-link"></div>
+        <div class="footter-navigation">
+          <div class="about-company">
+            <div class="logo">
+              <img class="logo__image" src="img/Icon dark.png" alt="logo" />
+              <div class="logo__text">
+                <div class="logo__name">Foundation</div>
+                <div class="logo__description">Startup landing template</div>
+              </div>
+            </div>
+            <div class="logo-vertical">
+              <img
+                class="logo-vertical__image"
+                src="img/Icon dark.png"
+                alt="logo"
+              />
+              <div class="logo-vertical__text">
+                <div class="logo-vertical__name">Foundation</div>
+                <div class="logo-vertical__description">
+                  Startup landing template
+                </div>
+              </div>
+            </div>
+            <p class="footer__description">
+              Foundation is a website template for startups and small teams. It
+              helps to build a website in no time.
+            </p>
+            <div class="downloads">
+              <img
+                class="downloads__items"
+                src="img/AppStore.png"
+                alt="Apple Store Download"
+              />
+              <img src="img/Google-Play.png" alt="Google Play Download" />
+            </div>
+          </div>
+          <div class="footer-line hide-desktop"></div>
+          <div class="additional-navigation">
+            <div class="additional-navigation__colum nav-links">
+              <h3 class="nav-links__title">Product</h3>
+              <ul class="nav-links__list">
+                <li class="nav-links__list-item">Acquire Users</li>
+                <li class="nav-links__list-item">Content Narketing</li>
+                <li class="nav-links__list-item">Website Templates</li>
+                <li class="nav-links__list-item">Customer Management</li>
+                <li class="nav-links__list-item">Virtual Inbox</li>
+              </ul>
+            </div>
+            <div class="additional-navigation__colum nav-links">
+              <h3 class="nav-links__title">Company</h3>
+              <ul class="nav-links__list">
+                <li class="nav-links__list-item">About Foundation</li>
+                <li class="nav-links__list-item">Brand Guidelines</li>
+                <li class="nav-links__list-item">Press Kits</li>
+                <li class="nav-links__list-item">Support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-line hide-mobile"></div>
         <div class="footer-links">
-          <nav class="footer-navigation">
-            <a href="#" class="footer-navigation__items">Terms</a>
-            <a href="#" class="footer-navigation__items">Privacy</a>
-            <a href="#" class="footer-navigation__items">License</a>
+          <nav class="terms">
+            <a href="#" class="terms__items">Terms</a>
+            <a href="#" class="terms__items">Privacy</a>
+            <a href="#" class="terms__items">License</a>
           </nav>
+
           <div class="social-links">
-            <span></span>
+            <a
+              class="social-links__item"
+              href="https://twitter.com"
+              target="_blank"
+              ><img src="img/social-twitter.png" alt="Twitter Link"
+            /></a>
+            <a
+              class="social-links__item"
+              href="https://facebook.com"
+              target="_blank"
+              ><img src="img/social-fb.png" alt="Facebook Link"
+            /></a>
+            <a
+              class="social-links__item"
+              href="https://linkedin.com"
+              target="_blank"
+              ><img src="img/social-linkedIn.png" alt="Linkedin Link"
+            /></a>
           </div>
         </div>
       </footer>
