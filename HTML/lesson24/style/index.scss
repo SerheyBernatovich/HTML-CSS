@@ -7,3 +7,26 @@
 @import 'header.scss';
 @import 'headline.scss';
 @import 'tips.scss';
+// @import 'audience.scss';
+// @import 'variables.scss';
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  color: #2b292d;
+}
+
+.page {
+  width: 100%;
+
+  @include for-large-down {
+    max-width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
