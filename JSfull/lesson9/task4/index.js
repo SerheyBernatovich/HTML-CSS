@@ -10,16 +10,31 @@
  * для этой задачи он отключен аннотацией eslint-disable
  * */
 
-function addPropertyV1(userData, userId) {}
+function addPropertyV1(userData, userId) {
+  userData.id = userId;
+  return userData;
+}
 
-// put your code here
+function addPropertyV2(userData, userId) {
+  Object.assign(userData, { id: userId });
+  return userData;
+}
 
-// put your code here
-
-// put your code here
+function addPropertyV3(userData, userId) {
+  const obj = Object.assign({}, userData);
+  obj.id = userId;
+  return obj;
+}
+function addPropertyV4(userData, userId) {
+  const resalt = { ...userData, id: userId };
+  return resalt;
+}
 
 // examples
 const user = {
   name: 'Sam',
 };
-addPropertyV1(user, '1234567'); // ==> { name: 'Sam', id: '1234567' }
+console.log(addPropertyV1(user, '1234567')); // ==> { name: 'Sam', id: '1234567' }
+console.log(addPropertyV2(user, '1234567'));
+console.log(addPropertyV3(user, '1234567'));
+console.log(addPropertyV4(user, '1234567'));
