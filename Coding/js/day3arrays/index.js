@@ -56,6 +56,7 @@ const anotherNumbersList = [5, 0, 8, 10, -4, 50, 220];
 //   }
 // });
 // console.log(filterRes);
+
 // callback
 // input: num, index(option), array(optional);
 // output: boolean;
