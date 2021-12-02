@@ -47,4 +47,4 @@ const removeHandlersBtn = () => {
 clear.addEventListener('click', clearList);
 attachHandlers.addEventListener('click', attachHandlersBtn);
 removeHandlers.addEventListener('click', removeHandlersBtn);
-document.addEventListener('DOMContentLoaded', attachHandlersBtn());
+document.addEventListener('DOMContentLoaded', attachHandlersBtn);
