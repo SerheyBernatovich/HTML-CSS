@@ -51,22 +51,44 @@ renderTasks(tasks);
 // 1 find task by id
 // 2 update task
 // 3 re-render
-function updateTaskHandler(event) {
-  // console.dir(event.target.classList.contains('list__item-checkbox'));
-  // console.log(event.target.getAttribute('type'));
 
+// function updateTaskHandler(event) {
+//   // console.dir(event.target.classList.contains('list__item-checkbox'));
+//   // console.log(event.target.getAttribute('type'));
+
+//   if (!event.target.classList.contains('list__item-checkbox')) {
+//     return;
+//   }
+//   //
+//   // const id = event.target.dataset.id;
+//   // console.log(id);
+//   const { id } = event.target.dataset;
+//   if (tasks.find(task => task.id === Number(id)).done) {
+//     tasks.find(task => task.id === Number(id)).done = false;
+//   } else {
+//     tasks.find(task => task.id === Number(id)).done = true;
+//   }
+//   renderTasks(tasks);
+// }
+
+// // input  string, func(callback)
+// // output  undefined
+// const res = listElem.addEventListener('click', updateTaskHandler);
+
+// WEB FLOW
+// 1 get data
+// 2 render
+// 3 update data, don't update DOM(!!!)
+// 4 re-render
+
+function updateTaskHandler(event) {
   if (!event.target.classList.contains('list__item-checkbox')) {
     return;
   }
-  //
-  // const id = event.target.dataset.id;
-  // console.log(id);
-  const { id } = event.target.dataset;
-  if (tasks.find(task => task.id === Number(id)).done) {
-    tasks.find(task => task.id === Number(id)).done = false;
-  } else {
-    tasks.find(task => task.id === Number(id)).done = true;
-  }
+
+  const task = tasks.find(el => el.id === Number(event.target.dataset.id));
+
+  task.done = !task.done;
   renderTasks(tasks);
 }
 
@@ -74,8 +96,23 @@ function updateTaskHandler(event) {
 // output  undefined
 const res = listElem.addEventListener('click', updateTaskHandler);
 
-// WEB FLOW
-// 1 get data
-// 2 render
-// 3 update data, don't update DOM(!!!)
-// 4 re-render
+// algo
+// 0 get task text
+// 1 creat task
+// 2 update tasks
+// 3 re-render
+
+const inputElem = document.querySelector('.task-input');
+const createBtnElem = document.querySelector('.create-task-btn');
+function createTaskHandler() {
+  const str = inputElem.value;
+
+  if (str === '') {
+    return;
+  }
+  inputElem.value = '';
+  tasks.push({ text: str, done: false, id: tasks.length + 1 });
+  renderTasks(tasks);
+}
+
+createBtnElem.addEventListener('click', createTaskHandler);
