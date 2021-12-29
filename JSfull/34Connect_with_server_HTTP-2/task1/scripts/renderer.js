@@ -9,20 +9,28 @@ const createCheckbox = ({ done, id }) => {
   checkboxElem.setAttribute('type', 'checkbox');
   checkboxElem.setAttribute('data-id', id);
   checkboxElem.checked = done;
-  checkboxElem.classList.add('list__item-checkbox');
+  checkboxElem.classList.add('list-item__checkbox');
 
   return checkboxElem;
 };
 
 const createListItem = ({ text, done, id }) => {
   const listItemElement = document.createElement('li');
-  listItemElement.classList.add('list__item');
+  listItemElement.classList.add('list-item', 'list__item');
   const checkboxElem = createCheckbox({ done, id });
 
-  if (done) {
-    listItemElement.classList.add('list__item_done');
+  if (!done) {
+    listItemElement.classList.add('list-item_done');
   }
-  listItemElement.append(checkboxElem, text);
+
+  const textElem = document.createElement('span');
+  textElem.classList.add('list-item__text');
+  textElem.textContent = text;
+
+  const deleteBtnElem = document.createElement('button');
+  deleteBtnElem.classList.add('list-item__delete-btn');
+
+  listItemElement.append(checkboxElem, textElem, deleteBtnElem);
 
   return listItemElement;
 };

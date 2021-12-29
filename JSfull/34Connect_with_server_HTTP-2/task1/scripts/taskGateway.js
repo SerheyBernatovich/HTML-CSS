@@ -1,6 +1,6 @@
-const baseUrl = 'https://61b843c464e4a10017d18e3f.mockapi.io/api/v1/tasks'; // link to tasksList API
+const baseUrl = 'https://61c0aacf33f24c0017823540.mockapi.io/api/v1/tasks'; // link to tasksList API
 
-export const getTasksList = () => fetch(baseUrl).then(response => response.json()); // from this promise we getting array of tasks (objects)
+export const getTasksList = () => fetch(baseUrl).then(response => response.json());
 
 export const createTask = taskData =>
   fetch(baseUrl, {
@@ -10,6 +10,7 @@ export const createTask = taskData =>
     },
     body: JSON.stringify(taskData),
   });
+
 export const updateTask = (id, value) =>
   fetch(`${baseUrl}/${id}`, {
     method: 'PUT',
@@ -17,4 +18,10 @@ export const updateTask = (id, value) =>
       'Content-Type': 'application/json;charset=utf-8',
     },
     body: JSON.stringify(value),
+  });
+
+export const deleteTask = id =>
+  fetch(`${baseUrl}/${id}`, {
+    method: 'DELETE',
+    headers: { 'Content-Type': 'application/json;charset=utf-8' },
   });
